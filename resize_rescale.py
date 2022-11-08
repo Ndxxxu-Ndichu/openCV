@@ -8,6 +8,11 @@ def rescaleFrame(frame, scale=0.75):
 
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
+def changeRes(width, height):
+    #Live video
+    capture.set(3, width)
+    capture.set(4, height)
+
 
 #resize image
 img = cv.imread('pics/1.jpg')
